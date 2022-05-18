@@ -1,0 +1,16 @@
+body{
+    background-size: cover;
+}
+.Web{
+    color:aquamarine;
+    font-size: 20px;
+}
+.btn-info{
+    width: 100%;
+}
+canvas{
+    background-color: lightyellow;
+    border: 5px solid cornflowerblue;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px greenyellow;
+}
