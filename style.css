@@ -14,4 +14,6 @@ canvas{
     border: 5px solid cornflowerblue;
     border-radius: 25px;
     box-shadow: 5px 5px 5px greenyellow;
+    margin: 50px;
+    padding: 20px;
 }
