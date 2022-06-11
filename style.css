@@ -15,5 +15,6 @@ canvas{
     border-radius: 25px;
     box-shadow: 5px 5px 5px greenyellow;
     margin: 50px;
+    margin-top: 100px; 
     padding: 20px;
 }
