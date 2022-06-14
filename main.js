@@ -7,6 +7,7 @@ rightWristY= 0;
 scoreLeftWrist= 0;
 scoreRightWrist= 0;
 status= "";
+status1= "";
 function preload(){
     song1= loadSound("music.mp3");
     song2= loadSound("music2.mp3");
@@ -37,23 +38,24 @@ function modelLoaded(){
 }
 function draw(){
     image(video, 0, 0, 600, 500);
-    song1.isPlaying();
-    status= "song1";
+    status= song1.isPlaying();
     fill("red");
     stroke("blue");
     if (scoreLeftWrist > 0.2){
         circle(leftWristX, leftWristY, 20);
         song2.stop();
-        if (status == "false"){
+        if (status == false){
+            status= true;
             song1.play();
             document.getElementById("song_name").innerHTML = "Angry Birds is playing now!";
         }
     }
-    status= "song2";
+    status1= song2.isPlaying();
     if(scoreRightWrist > 0.2){
         circle(rightWristX, rightWristY, 20);
         song2.stop();
-        if(status == "false"){
+        if(status1 == false){
+            status1= true;
             song2.play();
             document.getElementById("song_name").innerHTML = "Thunder is playing now!";
         }
